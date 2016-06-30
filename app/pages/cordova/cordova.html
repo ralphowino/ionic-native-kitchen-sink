@@ -1,0 +1,11 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Cordova Plugins
+    </ion-title>
+</ion-navbar>
+
+<ion-content padding>
+    <button block outline dark *ngFor="let item of cordovaPlugins.plugins">
+        {{item.name}}
+    </button>
+</ion-content>

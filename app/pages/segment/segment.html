@@ -1,0 +1,50 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Segment
+    </ion-title>
+</ion-navbar>
+
+<ion-content>
+    <div padding>
+        <ion-segment [(ngModel)]="pet">
+            <ion-segment-button value="kittens">
+                Kittens
+            </ion-segment-button>
+            <ion-segment-button value="puppies">
+                Puppies
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+
+    <div [ngSwitch]="pet">
+        <ion-list *ngSwitchWhen="'puppies'">
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://cdn3-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-15.jpg">
+                </ion-thumbnail>
+                <h2>Mittens</h2>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://cdn2-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-8.jpg">
+                </ion-thumbnail>
+                <h2>Dory</h2>
+            </ion-item>
+        </ion-list>
+
+        <ion-list *ngSwitchWhen="'kittens'">
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://www.eastcottvets.co.uk/uploads/Animals/gingerkitten.jpg">
+                </ion-thumbnail>
+                <h2>Garfield</h2>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://i.telegraph.co.uk/multimedia/archive/02830/cat_2830677b.jpg">
+                </ion-thumbnail>
+                <h2>Milo</h2>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

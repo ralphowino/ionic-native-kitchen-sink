@@ -1,0 +1,13 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Datetime
+    </ion-title>
+</ion-navbar>
+
+<ion-content>
+    <ion-item>
+        <ion-label>Start Time</ion-label>
+        <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="timeStarts"></ion-datetime>
+    </ion-item>
+    <p>Your time starts at: {{timeStarts}}</p>
+</ion-content>

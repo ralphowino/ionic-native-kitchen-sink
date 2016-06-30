@@ -1,0 +1,12 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Native Components
+    </ion-title>
+</ion-navbar>
+
+<ion-content padding>
+    <ion-searchbar [(ngModel)]="searchQuery" (ionInput)="getItems(searchQuery)"></ion-searchbar>
+    <button block outline dark *ngFor="let item of native" (click)="goToPage(item.page)">
+        {{item.name}}
+    </button>
+</ion-content>

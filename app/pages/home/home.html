@@ -1,12 +1,14 @@
 <ion-navbar *navbar>
-  <ion-title>
-    Ionic Blank
-  </ion-title>
+    <ion-title>
+        Ionic Kitchen Sink
+    </ion-title>
 </ion-navbar>
 
-<ion-content class="home" padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding>
+
+    <button (click)="cordovaPlugins()" block>Cordova Plugins</button>
+    <button (click)="nativeComponents()" block>Native Components</button>
+    <button (click)="goToIntroduction()" block>Introduction</button>
+    <button (click)="feedback()" block>Feedback</button>
+
 </ion-content>

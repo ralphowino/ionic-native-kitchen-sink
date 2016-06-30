@@ -1,0 +1,13 @@
+ion-content{
+  .first-row{
+    margin-top: 50px;
+  }
+  ion-row{
+    ion-col{
+      padding-left: 30px!important;
+    }
+    ion-icon{
+      font-size: 3em;
+    }
+  }
+}

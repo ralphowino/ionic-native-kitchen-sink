@@ -1,0 +1,242 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Lists
+    </ion-title>
+</ion-navbar>
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            Basic List
+        </ion-card-header>
+        <ion-list>
+            <ion-item>
+                Ninja Storm
+            </ion-item>
+            <ion-item>
+                Lightspeed Rescue
+            </ion-item>
+            <ion-item>
+                Time Force
+            </ion-item>
+            <ion-item>
+                Wild Force
+            </ion-item>
+            <ion-item>
+                Dino Thunder
+            </ion-item>
+        </ion-list>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            Inset List
+        </ion-card-header>
+        <ion-list inset>
+            <ion-item>
+                Hufflepuff
+            </ion-item>
+            <ion-item>
+                Ravenclaw
+            </ion-item>
+            <ion-item>
+                Gryfindor
+            </ion-item>
+            <ion-item>
+                Slytherin
+            </ion-item>
+        </ion-list>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            List Dividers
+        </ion-card-header>
+        <ion-item-group>
+
+            <ion-item-divider light>Group A</ion-item-divider>
+            <ion-item>Portugal</ion-item>
+            <ion-item>Spain</ion-item>
+            <ion-item>England</ion-item>
+            <ion-item>Germany</ion-item>
+
+        </ion-item-group>
+
+        <ion-item-group>
+
+            <ion-item-divider light>Group B</ion-item-divider>
+            <ion-item>Italy</ion-item>
+            <ion-item>France</ion-item>
+            <ion-item>Belgium</ion-item>
+            <ion-item>Austria</ion-item>
+
+        </ion-item-group>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            List Headers
+        </ion-card-header>
+        <ion-list>
+            <ion-list-header>
+                1994 Classics
+            </ion-list-header>
+            <ion-item>Pulp Fiction</ion-item>
+            <ion-item>Forrest Gump</ion-item>
+            <ion-item>The Shawshank Redemption</ion-item>
+        </ion-list>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            Icon List
+        </ion-card-header>
+        <ion-list no-border>
+
+            <ion-list-header>
+                Classes
+            </ion-list-header>
+
+            <ion-item>
+                <ion-icon name='planet' item-left></ion-icon>
+                Astronomy
+            </ion-item>
+
+            <ion-item>
+                <ion-icon name='body' item-left></ion-icon>
+                Muggle Studies
+            </ion-item>
+
+            <ion-item>
+                <ion-icon name='leaf' item-left></ion-icon>
+                Herbology
+            </ion-item>
+
+            <ion-item>
+                <ion-icon name='flask' item-left></ion-icon>
+                Potions
+            </ion-item>
+
+        </ion-list>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            Avatar List
+        </ion-card-header>
+        <ion-list>
+            <ion-item>
+                <ion-avatar item-left>
+                    <img width="120" height="120"
+                         src="http://vignette2.wikia.nocookie.net/lotr/images/8/8d/Gandalf-2.jpg/revision/latest?cb=20130209172436">
+                </ion-avatar>
+                <h2>Gandalf</h2>
+                <p>'Fly you fools'</p>
+            </ion-item>
+            <ion-item>
+                <ion-avatar item-left>
+                    <img width="120" height="120"
+                         src="https://upload.wikimedia.org/wikipedia/en/7/78/Bilbo_Baggins.jpg">
+                </ion-avatar>
+                <h2>Bilbo Baggins</h2>
+                <p>'I think I am quite ready for another adventure'</p>
+            </ion-item>
+            <ion-item>
+                <ion-avatar item-left>
+                    <img width="120" height="120"
+                         src="https://upload.wikimedia.org/wikipedia/en/4/4e/Elijah_Wood_as_Frodo_Baggins.png">
+                </ion-avatar>
+                <h2>Frodo Baggins</h2>
+                <p>'I’m glad to be with you, Samwise Gamgee…here at the end of all things.'</p>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            Multiline List
+        </ion-card-header>
+        <ion-list>
+            <ion-item>
+                <h2>Cap't America</h2>
+                <h3>He did not know Tony</h3>
+                <p>He was under hydra's influence</p>
+            </ion-item>
+            <ion-item>
+                <h2>Iron Man</h2>
+                <h3>I don't care</h3>
+                <p>He killed my mom</p>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            Sliding List
+        </ion-card-header>
+        <ion-list>
+            <ion-item-sliding>
+                <ion-item>
+                    <ion-avatar item-left>
+                        <img width="120" height="120"
+                             src="http://macguff.in/wp-content/uploads/2012/01/The-Good-the-Bad-and-the-Ugly.jpg">
+                    </ion-avatar>
+                    <h2>Blondie</h2>
+                </ion-item>
+                <ion-item-options>
+                    <button primary>
+                        <ion-icon name="text"></ion-icon>
+                        Text
+                    </button>
+                    <button secondary>
+                        <ion-icon name="call"></ion-icon>
+                        Call
+                    </button>
+                </ion-item-options>
+            </ion-item-sliding>
+            <ion-item-sliding>
+                <ion-item>
+                    <ion-avatar item-left>
+                        <img width="120" height="120" src="http://www.themoviescene.co.uk/reviews/_img/733-3.jpg">
+                    </ion-avatar>
+                    <h2>Tuco</h2>
+                </ion-item>
+                <ion-item-options>
+                    <button primary>
+                        <ion-icon name="text"></ion-icon>
+                        Text
+                    </button>
+                    <button secondary>
+                        <ion-icon name="call"></ion-icon>
+                        Call
+                    </button>
+                </ion-item-options>
+            </ion-item-sliding>
+        </ion-list>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            Thumbnail List
+        </ion-card-header>
+        <ion-list>
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://t3.gstatic.com/images?q=tbn:ANd9GcTp-yv1Vq_eoOYzyQPRghPbWKAmT3kAP-hGgI-9B8exr5R3uhbU">
+                </ion-thumbnail>
+                <h2>Predestination</h2>
+                <p>Peter Spierig • 2014</p>
+                <button clear item-right>View</button>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail item-left>
+                    <img src="http://t2.gstatic.com/images?q=tbn:ANd9GcRo9vfJCM6dzPkZHIHBVCtlJnAnew9Ai26kEdrli0-tfmatmciD">
+                </ion-thumbnail>
+                <h2>Inception</h2>
+                <p>Christopher Nolan • 2010</p>
+                <button clear item-right>View</button>
+            </ion-item>
+        </ion-list>
+    </ion-card>
+
+</ion-content>
