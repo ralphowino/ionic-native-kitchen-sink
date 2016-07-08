@@ -2,7 +2,7 @@ import {Component} from "@angular/core";
 import {SpinnerDialog} from 'ionic-native';
 
 @Component({
-    templateUrl:'build/pages/spinnerdialog/spinnerdialog.html'
+    templateUrl:'build/pages/spinner-dialog/spinnerdialog.html'
 })
 
 export class Spinner{

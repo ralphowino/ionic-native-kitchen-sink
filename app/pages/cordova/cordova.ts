@@ -20,6 +20,8 @@ import {Splash} from '../splashscreen/splashscreen';
 import {Status} from '../statusbar/statusbar';
 import {ToastPlugin} from '../toast-plugin/toastplugin';
 import {VibrationPlugin} from '../vibration/vibration';
+import {Sql} from '../sqlite/sqlite';
+import {Map} from '../google-maps/googlemaps';
 
 interface cordova {
     name:string;
@@ -77,7 +79,7 @@ export class Cordova {
         },
         {
             name: 'Google Maps',
-            page: 'app.geo',
+            page: Map,
             tags: []
         },
         {
@@ -127,7 +129,7 @@ export class Cordova {
         },
         {
             name: 'Sqlite',
-            page: 'app.social',
+            page: Sql,
             tags: []
         },
         {
