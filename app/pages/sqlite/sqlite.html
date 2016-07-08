@@ -1,0 +1,43 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Sqlite Plugin
+    </ion-title>
+</ion-navbar>
+
+<ion-content padding>
+    <ion-card>
+
+        <ion-card-content>
+            Access SQLite databases on the device.Repo: https://github.com/litehelpers/Cordova-sqlite-storage
+        </ion-card-content>
+
+    </ion-card>
+
+    <form (ngSubmit)="add()" #theForm="ngForm">
+        <ion-list>
+
+            <ion-item>
+                <ion-label floating>First Name</ion-label>
+                <ion-input type="text" [(ngModel)]="firstname" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Second Name</ion-label>
+                <ion-input type="text" [(ngModel)]="secondname" required></ion-input>
+            </ion-item>
+
+
+        </ion-list>
+        <button type="submit" [disabled]="!theForm.form.valid" block>
+            Add  User
+        </button>
+    </form>
+
+    <ion-content>
+        <ion-list>
+            <ion-item *ngFor="let person of people">
+                {{person.firstname}} {{person.lastname}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-content>

@@ -5,7 +5,7 @@
 </ion-navbar>
 
 <ion-content padding>
-    <button block outline dark *ngFor="let item of cordovaPlugins.plugins">
+    <button block outline dark *ngFor="let item of plugins" (click)="goToPage(item.page)" >
         {{item.name}}
     </button>
 </ion-content>

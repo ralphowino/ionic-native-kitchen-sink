@@ -1,9 +1,213 @@
 <ion-navbar *navbar>
     <ion-title>
-        Forms
+        Form Elements
     </ion-title>
 </ion-navbar>
 
-<ion-content padding>
+<ion-content>
+    <ion-item>
+        <ion-searchbar></ion-searchbar>
+    </ion-item>
+    <ion-card>
+
+        <ion-card-header>
+            Fixed Labels
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-list>
+
+                <ion-item>
+                    <ion-label fixed>Username</ion-label>
+                    <ion-input type="text" value=""></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label fixed>Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+
+            </ion-list>
+        </ion-card-content>
+
+    </ion-card>
+
+    <ion-card>
+
+        <ion-card-header>
+            Floating Labels
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-list>
+
+                <ion-item>
+                    <ion-label floating>Username</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label floating>Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+
+            </ion-list>
+        </ion-card-content>
+
+    </ion-card>
+
+    <ion-card>
+
+        <ion-card-header>
+            Inline Labels
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-list>
+
+                <ion-item>
+                    <ion-label>Username</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+
+            </ion-list>
+        </ion-card-content>
+
+    </ion-card>
+
+    <ion-card>
+
+        <ion-card-header>
+            Inset Labels
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-list inset>
+
+                <ion-item>
+                    <ion-label>Username</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+
+            </ion-list>
+        </ion-card-content>
+
+    </ion-card>
+
+    <ion-card>
+
+        <ion-card-header>
+            Placeholder Labels
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-list>
+
+                <ion-item>
+                    <ion-input type="text" placeholder="Username"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-input type="password" placeholder="Password"></ion-input>
+                </ion-item>
+
+            </ion-list>
+        </ion-card-content>
+
+    </ion-card>
+
+    <ion-card>
+
+        <ion-card-header>
+            Stacked Label
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-list>
+
+                <ion-item>
+                    <ion-label stacked>Username</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label stacked>Password</ion-label>
+                    <ion-input type="password"></ion-input>
+                </ion-item>
+
+            </ion-list>
+        </ion-card-content>
+
+    </ion-card>
+
+    <ion-card>
+
+        <ion-card-header>
+            Checkbox
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-list>
+
+                <ion-item>
+                    <ion-label>Frodo Baggins</ion-label>
+                    <ion-checkbox dark checked="true"></ion-checkbox>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Bilbo Baggins</ion-label>
+                    <ion-checkbox dark></ion-checkbox>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Smeagol</ion-label>
+                    <ion-checkbox disabled="true"></ion-checkbox>
+                </ion-item>
+
+            </ion-list>
+        </ion-card-content>
+
+    </ion-card>
+
+    <ion-card>
+
+        <ion-card-header>
+            Radio
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-list radio-group>
+                <ion-list-header>
+                    Language
+                </ion-list-header>
+
+                <ion-item>
+                    <ion-label>Go</ion-label>
+                    <ion-radio checked="true" value="go"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Rust</ion-label>
+                    <ion-radio value="rust"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>Python</ion-label>
+                    <ion-radio value="python" disabled="true"></ion-radio>
+                </ion-item>
+            </ion-list>
+        </ion-card-content>
+
+    </ion-card>
 
 </ion-content>

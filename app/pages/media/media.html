@@ -1,0 +1,29 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Media Plugin
+    </ion-title>
+</ion-navbar>
+
+<ion-content padding>
+    <ion-card>
+
+        <ion-card-content>
+            Repo: https://github.com/apache/cordova-plugin-media
+        </ion-card-content>
+
+    </ion-card>
+
+    <ion-list inset>
+        <ion-item>
+            <button (click)="play" [disabled]="!isActive">
+                <ion-icon name="play"></ion-icon>
+            </button>
+
+            <button (click)="pause" [disabled]="isActive">
+                Right Icon
+                <ion-icon name="pause"></ion-icon>
+            </button>
+
+        </ion-item>
+    </ion-list>
+</ion-content>

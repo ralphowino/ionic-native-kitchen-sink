@@ -1,0 +1,31 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Barcode Scanner Plugin
+    </ion-title>
+</ion-navbar>
+
+<ion-content padding>
+    <ion-card>
+
+        <ion-card-content>
+            The Barcode Scanner Plugin opens a camera view and automatically scans a barcode, returning the data back to you.
+            Requires Cordova plugin: phonegap-plugin-barcodescanner.
+        </ion-card-content>
+
+    </ion-card>
+
+    <ion-card>
+
+        <ion-card-header>
+            Data:
+        </ion-card-header>
+
+        <ion-card-content>
+            {{data}}
+        </ion-card-content>
+
+    </ion-card>
+    <button block (click)="scan()">
+        Scan Barcode
+    </button>
+</ion-content>

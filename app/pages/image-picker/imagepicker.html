@@ -1,0 +1,22 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Barcode Scanner Plugin
+    </ion-title>
+</ion-navbar>
+
+<ion-content padding>
+    <ion-card>
+
+        <ion-card-content>
+            Cordova Plugin For Multiple Image Selection
+            Requires Cordova plugin: cordova-plugin-image-picker.
+        </ion-card-content>
+
+    </ion-card>
+    <ion-card *ngFor="let image of images">
+        <img [src]="image">
+    </ion-card>
+    <button block (click)="getImages()">
+        Pick Images
+    </button>
+</ion-content>

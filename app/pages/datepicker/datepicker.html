@@ -1,0 +1,31 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Datepicker Plugin
+    </ion-title>
+</ion-navbar>
+
+<ion-content padding>
+    <ion-card>
+
+        <ion-card-content>
+            The DatePicker plugin allows the user to fetch date or time using native dialogs.
+            Requires Cordova plugin: cordova-plugin-datepicker.
+        </ion-card-content>
+
+    </ion-card>
+
+    <ion-card>
+
+        <ion-card-header>
+            Date Picked:
+        </ion-card-header>
+
+        <ion-card-content>
+            {{date}}
+        </ion-card-content>
+
+    </ion-card>
+    <button block (click)="pickDate()">
+        Pick Date
+    </button>
+</ion-content>

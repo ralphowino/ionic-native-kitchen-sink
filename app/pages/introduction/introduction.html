@@ -1,0 +1,53 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Introduction
+    </ion-title>
+    <ion-buttons end>
+        <button clear (click)="goToHome()">
+            Skip
+        </button>
+    </ion-buttons>
+</ion-navbar>
+
+<ion-content class="tutorial-page">
+    <ion-slides pager>
+
+        <ion-slide>
+            <h2>Welcome</h2>
+            This is an Ionic Kitchen Sink application featuring most of the components of the
+            Ionic Framework and the Cordova Plugins.
+        </ion-slide>
+
+        <ion-slide>
+            <img class="full-image" src="/android_asset/www/img/Code.PNG">
+            <h2>View Code</h2>
+            You can view the source code for the given component by viewing clicking the button
+            on the top right corner of each page.
+
+        </ion-slide>
+
+        <ion-slide>
+            <img class="full-image" src="/android_asset/www/img/Homepage.PNG">
+            <h2>Home Page</h2>
+            The home page consists of three buttons, one for the Native Components,one for
+            the Cordova Plugins and another to take you back to the introduction slides. They
+            take you to the respective pages.
+        </ion-slide>
+
+        <ion-slide>
+            <img class="full-image" src="/android_asset/www/img/Cordova.PNG">
+            <h2>Cordova Plugins</h2>
+            This page contains links to the various cordova plugins displayed in the Kitchen
+            Sink.
+        </ion-slide>
+
+        <ion-slide>
+            <img class="full-image" src="/android_asset/www/img/Native.PNG">
+            <h2>Native Elements</h2>
+            This is where the links to the various Ionic native elements are found. At the top of
+            the page is a search box where you can filter through the displayed elements by searching
+            for keywords eg.Searching for 'spinner' will filter for Spinner.
+        </ion-slide>
+
+    </ion-slides>
+</ion-content>

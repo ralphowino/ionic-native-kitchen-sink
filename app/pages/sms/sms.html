@@ -1,0 +1,34 @@
+<ion-navbar *navbar>
+    <ion-title>
+        SMS Plugin
+    </ion-title>
+</ion-navbar>
+
+<ion-content padding>
+    <ion-card>
+
+        <ion-card-content>
+            Requires Cordova plugin: cordova-plugin-sms.Repo: https://github.com/cordova-sms/cordova-sms-plugin
+        </ion-card-content>
+
+    </ion-card>
+
+    <form (ngSubmit)="sendSMS()" #theForm="ngForm">
+        <ion-list>
+
+            <ion-item>
+                <ion-label floating>Phone No.</ion-label>
+                <ion-input type="text" [(ngModel)]="phone" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Message</ion-label>
+                <ion-input type="text" [(ngModel)]="message" required></ion-input>
+            </ion-item>
+
+        </ion-list>
+        <button type="submit" [disabled]="!theForm.form.valid" block>
+            Send SMS
+        </button>
+    </form>
+</ion-content>

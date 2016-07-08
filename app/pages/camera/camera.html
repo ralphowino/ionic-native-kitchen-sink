@@ -1,0 +1,21 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Camera Plugin
+    </ion-title>
+</ion-navbar>
+
+<ion-content padding>
+    <ion-card>
+
+        <ion-card-header>
+        </ion-card-header>
+
+        <ion-card-content>
+            <img [src]="imageSrc" >
+        </ion-card-content>
+
+    </ion-card>
+    <button block (click)="takePhoto()">
+        Take Photo
+    </button>
+</ion-content>

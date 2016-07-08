@@ -1,0 +1,40 @@
+<ion-navbar *navbar>
+    <ion-title>
+        EmailComposer Plugin
+    </ion-title>
+</ion-navbar>
+
+<ion-content padding>
+    <ion-card>
+
+        <ion-card-content>
+            Requires Cordova plugin: cordova-plugin-email-composer.
+        </ion-card-content>
+
+    </ion-card>
+
+    <form (ngSubmit)="sendEmail()" #theForm="ngForm">
+        <ion-list>
+
+            <ion-item>
+                <ion-label floating>To</ion-label>
+                <ion-input type="email" [(ngModel)]="to" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Subject</ion-label>
+                <ion-input type="text" [(ngModel)]="subject" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating>Body</ion-label>
+                <ion-input type="text" [(ngModel)]="body" required></ion-input>
+            </ion-item>
+
+        </ion-list>
+        <button type="submit" [disabled]="!theForm.form.valid" block>
+            Send Email
+        </button>
+    </form>
+
+</ion-content>

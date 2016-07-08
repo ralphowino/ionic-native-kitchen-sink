@@ -1,0 +1,31 @@
+<ion-navbar *navbar>
+    <ion-title>
+        App Availability Plugin
+    </ion-title>
+</ion-navbar>
+
+<ion-content padding>
+    <ion-card>
+
+        <ion-card-content>
+            This plugin allows you to check if an app is installed on the user's device.
+            It requires an URI Scheme (e.g. twitter://) on iOS or a Package Name (e.g com.twitter.android) on Android.
+        </ion-card-content>
+
+    </ion-card>
+
+    <ion-card>
+
+        <ion-card-header>
+            Check for Twitter
+        </ion-card-header>
+
+        <ion-card-content>
+            {{isAvailable}}
+        </ion-card-content>
+
+    </ion-card>
+    <button block (click)="checkTwitter()">
+        Check for Twitter
+    </button>
+</ion-content>
